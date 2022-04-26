@@ -41,7 +41,7 @@ services:
             - ${PL_SSL_KEY:-./ssl/key.pem}:/ssl/key
             - ${PL_SSL_CONF:-./ssl/ssl.conf}:/ssl/ssl.conf
             - /etc/ssl/certs/dhparam.pem:/ssl/dhparam.pem
-            - ./logs/nginx:/var/log/nginx:Z
+            - ../logs/nginx:/var/log/nginx:Z
         ports:
             - 80:80
             - 443:443
